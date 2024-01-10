@@ -1,0 +1,23 @@
+name: Cypress Tests Run - Museum
+on: 
+  workflow_dispatch:
+jobs:
+  cypress-run:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+     
+      - name: Installing dependencies
+        run: |
+          npm install
+          npx cypress install 
+     
+      - name: Cypress run
+        run: npx cypress run reports
+        
+      - name: Upload reports
+        uses: actions/upload-artifact@v2
+        with:
+          name: reports
+          path: cypress/reports
