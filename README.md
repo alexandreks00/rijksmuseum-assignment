@@ -1,4 +1,94 @@
-# Cypress Test Execution and Mochawesome Report Generation
+### Assignment 1 - To address the challenges faced by the BSI Scrum Team and improve the product's confidence, here's a comprehensive plan:
+
+
+### Problem Identification:
+1. **Lack of Confidence in the Product:**
+   - Conduct a thorough analysis of the reported bugs and issues in production.
+   - Establish a feedback loop with end-users to understand their concerns.
+   - Identify key areas where the team has lost confidence and prioritize those for improvement.
+2. **Continuous Negative Feedback and Reputation Issues:**
+   - Review customer feedback and identify recurring issues.
+   - Investigate the impact of production bugs on the product's reputation.
+   - Develop a strategy to address reputation issues and improve customer satisfaction.
+3. **Severe Time Pressure:**
+   - Analyze the current sprint planning and workload distribution.
+   - Identify bottlenecks and time-consuming tasks.
+   - Propose adjustments to the workload or sprint planning process to alleviate time pressure.
+### Approach:
+1. **Rebuilding Confidence:**
+   - Establish a clear communication channel within the team.
+   - Organize regular team-building activities to boost morale.
+   - Develop a plan to address specific concerns raised during the retrospective.
+2. **Quality Improvement:**
+   - Prioritize critical bug fixes to address reputation issues.
+   - Allocate dedicated time for comprehensive testing during sprints.
+   - Introduce pair programming to enhance code review and reduce bugs.
+### Test Strategy and Test Plan:
+1. **Test Strategy:**
+   - Implement a combination of manual and automated testing.
+   - Prioritize testing critical functionalities impacting reputation.
+   - Focus on regression testing to catch any unintended side effects.
+2. **Test Plan:**
+   - Define test cases for each user story, covering positive and negative scenarios.
+   - Incorporate exploratory testing to uncover unforeseen issues.
+   - Establish a balance between unit testing, integration testing, and end-to-end testing.
+### Issues in Acceptance Criteria:
+1. **User Story 1:**
+   - Ensure compatibility testing in IE and Firefox.
+   - Validate the presentation of detailed candidates.
+   - Verify the user-friendly interface for searching.
+2. **User Story 2 & 3:**
+   - Validate the constraints for selecting employees, space, and equipment.
+   - Confirm the ability to edit appointments without errors.
+3. **User Story 4:**
+   - Confirm SMS or email notifications for canceled appointments.
+4. **User Story 5:**
+   - Ensure the removal of Hibernate layer meets acceptance criteria.
+   - Validate online payment components and absence of iFrames.
+### Test Cases:
+1. **User Story 1:**
+   - Test compatibility in IE and Firefox.
+   - Validate search functionality.
+   - Confirm detailed presentation of candidates.
+2. **User Story 2 & 3:**
+   - Test appointment creation and editing.
+   - Verify constraints for selecting employees, space, and equipment.
+3. **User Story 4:**
+   - Test cancellation of appointments.
+   - Confirm notifications to employees.
+4. **User Story 5:**
+   - Validate the removal of Hibernate layer.
+   - Test online payment components.
+   - Confirm no iFrames in use.
+### Test Tools and Techniques:
+1. **Tools:**
+   - PlaywrightJS for automated UI testing.
+   - PlaywrightJS for API testing.
+   - Mocha for Unit Testing
+   - Jira for issue tracking and project management.
+   - Cucumber/BDD for functional testing/documentation and to enhance communication and collaboration
+2. **Techniques:**
+   - Pair testing to enhance collaboration.
+   - Stress testing for critical functionalities.
+   - Code review for identifying potential issues.
+### Test Data Setup:
+1. **Appointment Data:**
+   - Create test data for various appointment scenarios.
+   - Include edge cases for start and end times.
+2. **Employee and Resource Data:**
+   - Test with different employee and resource availability scenarios.
+   - Ensure coverage for different combinations.
+3. **Notification Data:**
+   - Simulate email and SMS notifications for testing.
+### Conclusion:
+Implementing this plan will help the BSI Scrum Team address the identified issues, rebuild confidence, and deliver a higher-quality product. The focus on testing, collaboration, and strategic planning aims to improve both the team's satisfaction and the product's reputation.
+
+
+
+
+
+
+# Assignment 2
 
 This repository provides a comprehensive guide on how to run Cypress tests and generate stylish reports using the Mochawesome report generator. With this cool combination, you can execute your tests with Cypress, obtain visually appealing and informative reports, and gain insights into the reliability and performance of your applications.
 
@@ -30,21 +120,9 @@ Now that you have everything set up, let's run Cypress tests and generate cool M
 
 3. **Generate Mochawesome Reports**: To generate Mochawesome reports, add the `--reporter mochawesome` flag to the Cypress command. For example, to run all tests and generate the report, use the command `npx cypress run --reporter mochawesome`.
 
-4. **Access the Reports**: After the test execution, the Mochawesome report will be generated as an HTML file in the `cypress/reports` directory. Open the HTML file in your browser to view the comprehensive and visually appealing test report.
-
-![image](https://github.com/alexandreks00/uitesting-cypress/assets/17753947/aef5952b-27f9-4fcb-9091-7b2ae288111a)
-
-## Importance of "Load Delay" and "Progress Bar" Tests for UI Testing
-UI testing plays a crucial role in ensuring a seamless user experience. The "Load Delay" test is essential to verify that your web application loads and renders correctly within an acceptable timeframe. This test helps identify any performance bottlenecks or loading issues that could impact user satisfaction. Additionally, the "Progress Bar" test is important, especially for applications with asynchronous operations or data fetching. It validates the accuracy and responsiveness of progress bars, ensuring a smooth user experience and building trust in your application.
-                 
-## Importance of "GET /pet/{petId}" and "POST /pet" Tests for API Testing
-API testing is critical to ensure the reliability and functionality of your backend services. The "GET /pet/{petId}" test is vital for verifying the correctness of retrieving specific pet information based on its ID. This test helps validate the stability and accuracy of your API response, ensuring the requested pet details are returned accurately. Similarly, the "POST /pet" test plays a crucial role in API testing by confirming the API's ability to handle the creation of new pet records. This test ensures that the appropriate data is saved and that the API responds with the expected success status code, validating the reliability of your API's data creation capabilities.
-![image](https://github.com/alexandreks00/uitesting-cypress/assets/17753947/c0e66d15-7d11-4b27-aeba-561a64801639)
 
 
 
-## Additional Resources
 
-- [Cypress Documentation](https://docs.cypress.io/)
-- [Mochawesome Documentation](https://www.npmjs.com/package/mochawesome)
-# museum-api
+
+
