@@ -38,6 +38,7 @@ What kind of test strategy and test plan would you use?
    - Implement a combination of manual and automated testing.
    - Prioritize testing critical functionalities impacting reputation.
    - Focus on regression testing to catch any unintended side effects.
+   - Include CyberSec tests and Performance tests
 2. **Test Plan:**
    - Define test cases for each user story, covering positive and negative scenarios.
    - Incorporate exploratory testing to uncover unforeseen issues.
@@ -71,7 +72,7 @@ Indicate your test cases related to the user stories
     * Confirm SMS or email notifications for canceled appointments. Some profile (as Management) is required. So for example, the Manager should be given a permission so he can notify consumers about the cancellation and he can find another employee to do the service.
 4. User Story 5:
     * Ensure the removal of Hibernate layer meets acceptance criteria. I call this as a technical debit. It doesn’t have to be a user story, it could be a task on Jira for improvements on the current application.
-    * Validate online payment components and absence of iFrames. It doesn’t make sense, why Iframes are not allowed, it looks like this acceptance criteria is not connected to this userStory.
+    * Validate online payment components and absence of iFrames. It doesn’t make sense, why Iframes are not allowed, it looks like this acceptance criteria is not connected to this userStory. (CyberSec could be run here)
 
   
 What test tools and test techniques would you use to address problems?
