@@ -1,6 +1,14 @@
 ### Assignment 1 - To address the challenges faced by the BSI Scrum Team and improve the product's confidence, here's a comprehensive plan:
 
 
+• 
+• 
+• 
+•  
+• 
+
+What do you see as a problem and what would be the approach you follow to 
+address those problem is any? 
 ### Problem Identification:
 1. **Lack of Confidence in the Product:**
    - Conduct a thorough analysis of the reported bugs and issues in production.
@@ -23,6 +31,8 @@
    - Prioritize critical bug fixes to address reputation issues.
    - Allocate dedicated time for comprehensive testing during sprints.
    - Introduce pair programming to enhance code review and reduce bugs.
+  
+What kind of test strategy and test plan would you use? 
 ### Test Strategy and Test Plan:
 1. **Test Strategy:**
    - Implement a combination of manual and automated testing.
@@ -32,6 +42,8 @@
    - Define test cases for each user story, covering positive and negative scenarios.
    - Incorporate exploratory testing to uncover unforeseen issues.
    - Establish a balance between unit testing, integration testing, and end-to-end testing.
+  
+List any issues after reviewing the acceptance criteria’s 
 ### Issues in Acceptance Criteria:
 1. **User Story 1:**
    - Ensure compatibility testing in IE and Firefox.
@@ -45,21 +57,24 @@
 4. **User Story 5:**
    - Ensure the removal of Hibernate layer meets acceptance criteria.
    - Validate online payment components and absence of iFrames.
-### Test Cases:
-1. **User Story 1:**
-   - Test compatibility in IE and Firefox.
-   - Validate search functionality.
-   - Confirm detailed presentation of candidates.
-2. **User Story 2 & 3:**
-   - Test appointment creation and editing.
-   - Verify constraints for selecting employees, space, and equipment.
-3. **User Story 4:**
-   - Test cancellation of appointments.
-   - Confirm notifications to employees.
-4. **User Story 5:**
-   - Validate the removal of Hibernate layer.
-   - Test online payment components.
-   - Confirm no iFrames in use.
+
+Indicate your test cases related to the user stories 
+### Test Cases(full details in Notes):
+1. User Story 1:
+    * Ensure compatibility testing in IE and Firefox. The issue here is not including Chrome and Safari that got the biggest marketshare (usage)
+    * Validate the presentation of detailed candidates. This question just be clarified because we don’t know all the details and requirements to consider a candidate as appropriate.
+    * Verify the user-friendly interface for searching. As the previous Acceptance Criteria, the question is vague. UX/UI Designer usually would send us a Figma/Prototype with user flow and design.
+2. User Story 2 & 3:
+    * Validate the constraints for selecting employees, space, and equipment. We should discuss about the calendar’s format. More business details MUST be defined/expanded for this feature, so changing start/end time could be done depending from missing business rules here (example: After 24h you could not be allowed to change them)
+    * Confirm the ability to edit appointments without errors So after setting the time, user is allowed to select available Employees..
+3. User Story 4:
+    * Confirm SMS or email notifications for canceled appointments. Some profile (as Management) is required. So for example, the Manager should be given a permission so he can notify consumers about the cancellation and he can find another employee to do the service.
+4. User Story 5:
+    * Ensure the removal of Hibernate layer meets acceptance criteria. I call this as a technical debit. It doesn’t have to be a user story, it could be a task on Jira for improvements on the current application.
+    * Validate online payment components and absence of iFrames. It doesn’t make sense, why Iframes are not allowed, it looks like this acceptance criteria is not connected to this userStory.
+
+  
+What test tools and test techniques would you use to address problems?
 ### Test Tools and Techniques:
 1. **Tools:**
    - PlaywrightJS for automated UI testing.
@@ -71,6 +86,8 @@
    - Pair testing to enhance collaboration.
    - Stress testing for critical functionalities.
    - Code review for identifying potential issues.
+  
+How would you setup test data?
 ### Test Data Setup:
 1. **Appointment Data:**
    - Create test data for various appointment scenarios.
